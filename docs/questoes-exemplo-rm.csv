@@ -1,0 +1,15 @@
+competencia;nivel;enunciado;A;B;C;D;E;correta;explicacao
+sql;junior;Qual tabela do RM armazena o cadastro principal de funcionários (chapa, situação, seção, salário)?;PFUNC;PPESSOA;GCOLIGADA;PSECAO;;A;PPESSOA guarda dados pessoais e PFUNC é o vínculo do funcionário na coligada.
+sql;junior;Qual campo identifica a empresa (coligada) na maioria das tabelas do RM?;CODEMPRESA;CODCOLIGADA;IDEMPRESA;CODFILIAL;;B;
+sql;junior;Em qual tabela ficam as coligadas cadastradas no RM?;GCOLIGADA;GFILIAL;PCOLIGADA;FCOLIGADA;;A;
+sql;pleno;Qual combinação de campos identifica um funcionário de forma única na PFUNC?;CODCOLIGADA + CHAPA;CHAPA;CODPESSOA;CODCOLIGADA + CODSECAO;;A;A chapa se repete entre coligadas diferentes.
+sql;pleno;Qual tabela guarda as seções (departamentos) usadas no RM Labore?;PSECAO;GDEPTO;PFUNCAO;PSETOR;;A;
+labore;pleno;Qual tabela armazena os valores da ficha financeira (eventos calculados por período) do funcionário?;PFFINANC;PFUNC;PEVENTO;PFHSTSAL;;A;
+labore;junior;Onde se define se um evento da folha incide em INSS, FGTS e IRRF?;No cadastro do evento;No cadastro da seção;No cadastro do sindicato;No cadastro da função;;A;
+esocial;junior;Qual evento do eSocial envia a remuneração mensal do trabalhador?;S-1200;S-2200;S-1010;S-2299;;A;
+esocial;junior;Qual evento do eSocial corresponde à tabela de rubricas?;S-1000;S-1005;S-1010;S-1020;;C;
+esocial;junior;Qual evento do eSocial informa o desligamento do trabalhador?;S-2206;S-2230;S-2299;S-2399;;C;S-2399 é para trabalhador sem vínculo de emprego.
+esocial;pleno;Qual evento do eSocial informa a admissão (cadastramento) de um empregado?;S-2190;S-2200;S-2205;S-2300;;B;
+esocial;pleno;Qual evento do eSocial encerra o envio dos eventos periódicos do mês?;S-1298;S-1299;S-1280;S-1210;;B;
+fluxus;pleno;Qual tabela do RM Fluxus armazena os lançamentos financeiros (contas a pagar e a receber)?;FLAN;FCFO;FBOLETO;FXCX;;A;FCFO é o cadastro de clientes/fornecedores.
+nucleus;pleno;Qual tabela do RM Nucleus armazena o cabeçalho dos movimentos (pedidos, notas, requisições)?;TMOV;TITMMOV;TPRD;TTMV;;A;TITMMOV guarda os itens do movimento.

@@ -1,0 +1,28 @@
+@import "tailwindcss";
+
+@theme {
+  --color-tinta: #13223a;        /* azul-noite: texto e marca */
+  --color-tinta-2: #2b3d5c;
+  --color-papel: #f6f4ef;        /* fundo quente */
+  --color-cartao: #ffffff;
+  --color-linha: #e3dfd5;
+  --color-suave: #6b7280;
+  --color-ambar: #d9892b;        /* destaque Otto */
+  --color-ambar-claro: #fbeedd;
+  --color-verde: #2f7d5b;
+  --color-verde-claro: #e3f2ea;
+  --color-vermelho: #b3412f;
+  --color-vermelho-claro: #f8e4e0;
+
+  --font-sans: var(--fonte-texto), ui-sans-serif, system-ui, sans-serif;
+  --font-display: var(--fonte-titulo), ui-serif, Georgia, serif;
+}
+
+html { color-scheme: light; }
+body { background: var(--color-papel); color: var(--color-tinta); }
+
+.campo {
+  @apply w-full rounded-lg border border-linha bg-white px-3 py-2 text-sm outline-none
+         focus:border-tinta-2 focus:ring-2 focus:ring-ambar/30;
+}
+.rotulo { @apply mb-1 block text-sm font-medium text-tinta-2; }
